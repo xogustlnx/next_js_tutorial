@@ -1,12 +1,12 @@
 
 import {useState} from 'react';
 import { v4 } from 'uuid';
-import { QuestionInterface } from '../../public/src/interface/questions';
+// import { QuestionInterface } from '../../public/src/interface/questions';
 import axios from 'axios'
 
 export default function Create() {
-    const [title, setTitle] = useState<string>("")
-    const [desc, setDesc] = useState<string>("")
+    const [title, setTitle] = useState("")
+    const [desc, setDesc] = useState("")
 
     /*
     0. Data
@@ -36,7 +36,7 @@ export default function Create() {
 
 
 
-  const [questions, setQuestions]= useState<Array<QuestionInterface>>([])
+  const [questions, setQuestions]= useState([])
 
   const updateQuestionTitle=(uuid, text)=>{
     const index=questions.findIndex(q=>q.uuid===uuid)
